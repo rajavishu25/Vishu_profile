@@ -25,7 +25,7 @@ class Skill(models.Model):
             
 class Language(models.Model):
     name = models.CharField(max_length = 50)
-    proficiency_choices = [('beginner','beginner'),('intermediate' 'intermediate'),('proficient', 'proficient'),('native','native')]
+    proficiency_choices = [('1','beginner'),('2','intermediate'),('3', 'proficient'),('4','native')]
     proficiency = models.CharField(max_length = 20, choices = proficiency_choices)
 
 class Extracurricular_and_hobby(models.Model):
