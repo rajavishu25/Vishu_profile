@@ -26,15 +26,15 @@ class Experience(models.Model):
         return self.name
 
 class Skill(models.Model):
-    skill_name = models.CharField(max_length = 100)
+    name = models.CharField(max_length = 100)
     items= models.TextField()
 
     def __str__(self):
-        return self.skill_name
+        return self.name
             
 class Language(models.Model):
     name = models.CharField(max_length = 50)
-    proficiency_choices = [('1','beginner'),('2','intermediate'),('3', 'proficient'),('4','native')]
+    proficiency_choices = [('beginner','beginner'),('intermediate','intermediate'),('proficient', 'proficient'),('native','native')]
     proficiency = models.CharField(max_length = 20, choices = proficiency_choices)
 
     def __str__(self):
