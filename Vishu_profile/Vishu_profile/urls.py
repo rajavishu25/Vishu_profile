@@ -20,5 +20,9 @@ from items import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name = 'home'),
+    path('education', views.education, name = 'education'),
+    path('experience', views.experience, name = 'experience'),
+    path('skills', views.skills, name = 'skill'),
+    path('hobbies', views.hobbies, name = 'hobbies'),
     
 ]
