@@ -4,4 +4,3 @@ from .models import Education,Experience, Skill, Extracurricular_and_hobby, Lang
 def home(request):
     return render(request,'home.html')
 
-
