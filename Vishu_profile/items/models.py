@@ -42,7 +42,7 @@ class Language(models.Model):
         return self.name
 
 class Extracurricular_and_hobby(models.Model):
-    items = models.TextField()
+    item = models.TextField()
 
     def __str__(self):
         return "Extra curricular activities and Hobbies"
