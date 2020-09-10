@@ -20,6 +20,7 @@ class Experience(models.Model):
     starttime = models.DateField()
     endtime = models.DateField()
     description = models.TextField()
+    image =  models.ImageField(upload_to = 'images/',blank = True)
     website = models.URLField(blank = True)
 
     def __str__(self):
