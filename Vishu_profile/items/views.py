@@ -10,7 +10,7 @@ def education(request):
 
 def experience(request):
     experience = Experience.objects.all
-    return render(request, 'experience.html',{'experience' : experience})
+    return render(request, 'experience.html', {'experience' : experience})
 
 def skills(request):
     skills = Skill.objects.all
