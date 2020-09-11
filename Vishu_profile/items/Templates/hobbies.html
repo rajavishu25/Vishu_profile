@@ -52,6 +52,12 @@
   <section class="jumbotron text-center">
     <div class="container">
       <h1>Hobbies</h1>
+      <p>
+        <a href="{% url 'home' %}" class="btn btn-primary my-2">Back</a>
+        <a href="{% url 'education' %}" class="btn btn-primary my-2">Education</a>
+        <a href="{% url 'experience' %}" class="btn btn-secondary my-2">Experience</a>
+        <a href="{% url 'skills' %}" download class="btn btn-secondary my-2">Skills</a>
+      </p>
       <p class="lead text-muted">
         {% for hobby in hobbies %}
             <p> {{ hobby.item }} </p>

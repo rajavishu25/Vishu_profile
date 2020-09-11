@@ -51,6 +51,12 @@
     <section class="jumbotron text-center">
         <div class="container">
           <h1>Education</h1>
+          <p>
+            <a href="{% url 'home' %}" class="btn btn-primary my-2">Back</a>
+            <a href="{% url 'experience' %}" class="btn btn-secondary my-2">Experience</a>
+            <a href="{% url 'skills' %}" class="btn btn-primary my-2">Skills</a>
+            <a href="{% url 'hobbies' %}" download class="btn btn-secondary my-2">Hobbies</a>
+          </p>
           
       </section>
 
@@ -64,10 +70,10 @@
         {% for degree in education %}
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <img class ="card-img-top" src=" {{ degree.image.url }}"></img>
+            <img class ="card-img-top" src=" {{ degree.image.url }}" height = 200></img>
             <div class="card-body">
-              <p class="card-text">{{ degree.name }}</p>
-              <p class="card-text">{{ degree.university }}</p>
+              <p class="card-text"><b>{{ degree.name }}</b></p>
+              <p class="card-text"><i>{{ degree.university }}</i></p>
               <p class="card-text"> {{ degree.specialization }}</p>
               <p class="card-text">{{ degree.graduated_year }}</p>
               <p class="card-text">{{ degree.competencies }}</p>

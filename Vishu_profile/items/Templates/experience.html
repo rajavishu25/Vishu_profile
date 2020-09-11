@@ -51,6 +51,12 @@
     <section class="jumbotron text-center">
         <div class="container">
           <h1>Experience</h1>
+          <p>
+            <a href="{% url 'home' %}" class="btn btn-primary my-2">Back</a>
+            <a href="{% url 'education' %}" class="btn btn-secondary my-2">Education</a>
+            <a href="{% url 'skills' %}" class="btn btn-primary my-2">Skills</a>
+            <a href="{% url 'hobbies' %}" download class="btn btn-secondary my-2">Hobbies</a>
+          </p>
           
       </section>
 
@@ -64,10 +70,10 @@
         {% for pos in experience %}
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <img class ="card-img-top" src=" {{ pos.image.url }}"></img>
+            <img class ="card-img-top" src=" {{ pos.image.url }}" height = 200></img>
             <div class="card-body">
-              <p class="card-text">{{ pos.name }}</p>
-              <p class="card-text">{{ pos.company }}</p>
+              <p class="card-text"> <b>{{ pos.name }}</b></p>
+              <p class="card-text"> <i>{{ pos.company }}</i></p>
               <p class="card-text"> {{ pos.starttime }}</p>
               <p class="card-text">{{ pos.endtime }}</p>
               <p class="card-text">{{ pos.description }}</p>

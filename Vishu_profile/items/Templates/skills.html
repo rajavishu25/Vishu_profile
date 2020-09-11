@@ -52,6 +52,12 @@
   <section class="jumbotron text-center">
     <div class="container">
       <h1>Skills</h1>
+      <p>
+        <a href="{% url 'home' %}" class="btn btn-primary my-2">Back</a>
+        <a href="{% url 'education' %}" class="btn btn-primary my-2">Education</a>
+        <a href="{% url 'experience' %}" class="btn btn-secondary my-2">Experience</a>
+        <a href="{% url 'hobbies' %}" download class="btn btn-secondary my-2">Hobbies</a>
+      </p>
       <p class="lead text-muted">
         {% for skill in skills %}
         <p> {{ skill.name }} : {{ skill.items }} </p>
