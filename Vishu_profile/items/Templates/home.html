@@ -44,20 +44,28 @@
     </style>
     <!-- Custom styles for this template -->
     <link href="album.css" rel="stylesheet">
+    
   </head>
   <body>
     
 <main role="main">
+  <style>
+  .jumbotron.text-center {
+    background-size: 1280px 720px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+  </style>
 
-  <section class="jumbotron text-center">
+  <section class="jumbotron text-center" style = "background-image: url('{% static "python-for-web-development.jpg" %}')";>
     <div class="container">
-      <h1>Raja Janapati</h1>
-      <p class="lead text-muted">I love coding</p>
+      <h1 style = "color: green;">Raja Janapati</h1>
+      <p style = "color:azure;">I love coding. Coding is my passion</p>
       <p>
         <a href="mailto: rajavishu25@gmail.com" class="btn btn-primary my-2">Email me</a>
         <a href="https://github.com/rajavishu25" class="btn btn-secondary my-2">Check out my GITHUB</a>
         <a href="https://www.linkedin.com/in/raja-viswanath-janapati/" class="btn btn-primary my-2">Check out my LinkedIn Profile</a>
-        <a href="/static/Resume Raja Janapati IN.pdf" download class="btn btn-secondary my-2">Download resume</a>
+        <a href="{% static 'Resume Raja Janapati IN.pdf' %}" download class="btn btn-secondary my-2">Download resume</a>
       </p>
       <img src="{% static 'Raja Janapati.jpg' %}" height="300"></img>
     </div>
